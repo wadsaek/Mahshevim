@@ -1,0 +1,317 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.bgimg1 {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    background-color: #000000;
+    height: 100vh;
+}
+
+
+.bgimg1 img {
+    height: 100%;
+    opacity: 50%;
+    width: 100%;
+    background-repeat: round;
+    z-index: -2;
+}
+
+.mainbox {
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block1 .mainbox {
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.block1 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.block1 .mainbox {
+    height: 100vh;
+}
+
+.block1_content {
+    margin: 20vh 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 48vh;
+}
+
+
+
+.toplink {
+    height: 12vh;
+    width: contain;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 0;
+}
+
+.toplink button {
+    padding: 10px 25px;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    background-color: transparent;
+    color: #c7c7c7;
+    transition: 0.5s;
+}
+
+.toplink button:hover {
+    color: #ffffff;
+    border-color: #ff984f;
+}
+
+.libox {
+    height: 50px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: #c7c7c7;
+}
+
+li {
+    list-style-type: none;
+    display: block;
+    padding-bottom: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: #ffffff;
+}
+
+
+.textblock1 {
+    width: 50%;
+    color: #fff;
+}
+
+.textblock1 p {
+    font-size: 18px;
+    padding: 0 0 10px 0;
+}
+
+.textblock1 h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.textblock1 h1 mark {
+    background-color: #ff6a007b;
+    color: #ffffff;
+}
+
+.textblock1 button {
+    padding: 10px 25px;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    background-color: transparent;
+    color: #c7c7c7;
+    transition: 0.5s;
+}
+
+    .textblock1 button:hover {
+        color: #ffffff;
+        border-color: #ff984f;
+    }
+
+.imgblock1 {
+    width: 40%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+.block2 {
+    padding: 80px 0 100px 0;
+    background-color: #e6e6e6;
+    color: #414141;
+}
+
+.block2 .Maintextbox h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.block2 .Maintextbox h6 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+}
+
+.block2 .Maintextbox h6 mark {
+    background-color: #ff984f;
+    line-height: 1.7;
+}
+
+.block2 .slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 2;
+}
+
+.block2 .slide {
+    width: 850px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 80px 15px -50px #4141417b;
+    border-radius: 5px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block2 .slide .imgbox {
+    height: 100%;
+    width: 300px;
+}
+
+.block2 .slide img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+
+.block2 .slide .textbox {
+    width: 450px;
+    margin-right: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        
+    position: relative;
+    height: 300px;
+
+}
+
+.block2 .slide h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.block2 .slide p {
+    font-size: 18px;
+}
+
+.block2 .slide .pBottom a {
+    margin-right: 20px;
+    transition: 0.5s;
+    color: #4141415b;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.block2 .slide .pBottom a:hover {
+    color: #ff6a00;
+}
+
+.block2 .slide .pBottom i {
+    margin-right: 10px;
+}
+
+.stbox {
+    display: flex;
+    justify-content: end;
+    width: 1000px;
+    height: 100px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.next, .prev{
+    display: block;
+    cursor: pointer;
+    width: auto;
+    padding: 0;
+    color: #414141;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    border-radius: 3px 0 0 3px;
+}
+
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+    transition: .5s;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+        margin-left: -300px;
+        box-shadow: -200px 80px 15px -50px #4141414b;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0;
+        box-shadow: 0 80px 15px -50px #4141417b;
+    }
+}
+
+
+
+
+
+
+.glem {
+    opacity: 0%;
+    transition: 1s;
+    width: 250px;
+    padding-right: 30px;
+}
+
+.glem:hover {
+    opacity: 100%;
+}
