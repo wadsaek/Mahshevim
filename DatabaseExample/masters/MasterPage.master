@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../styling_scripting/css/Master.css" rel="stylesheet" />
+    <link href="../styling_scripting/inriaSansFont/InriaSansFonts.css" rel="stylesheet" />
+    <script>
+        function HideLogInSignUp() {
+            if (window.getComputedStyle(document.getElementById("LogUp")).display == 'block') {
+                document.getElementById("LogUp").style.display = 'none';
+            }
+            else{
+                document.getElementById("LogUp").style.display = 'block';
+                
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">   
+    </asp:ContentPlaceHolder>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server" method="post">
+    <header>
+            <div class="headercontainer">
+                <div class="homepageLink">
+                    <a href="../aspx/homePage.aspx" class="headLink">HOME PAGE</a>
+                </div>
+                <div class="navbar">
+                    <ul class="navbarul">
+                        <li>
+                            <div>
+                                <a href="../aspx/otherSongs.aspx" class="headLink">OTHER SONGS</a>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div>
+                                <a href="../aspx/folk.aspx" class="headLink">THE PEOPLE</a>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                                <ul id="LogUp" style="list-style:none; display:none;">
+                                    <li>
+                                        <a href="../aspx/login.aspx" style="color:#63241D;font-size:25px">LOGIN</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aspx/SignUp.aspx"style="color:#63241D;font-size:25px">SIGNUP</a>
+                                    </li>
+                                </ul>
+                            <img src="../images/pfps/default.png" height="45" onclick="HideLogInSignUp()"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="credits">
+                    
+                            <a href="https://www.flaticon.com/free-icons/emoji" title="emoji icons">Emoji icons created by Freepik - Flaticon</a>
+                       
+                </div>
+                <div class="allrights">
+                    <p>
+                        ©All rights reserved.<br />
+                        Pasha chudo(toy yakiy gimel)
+                    </p>
+                </div>
+                
+                <div class="links">
+                        <ul class="navbarul">
+                            <li>
+                                <a href="homePage.aspx" class="footanchor">HOME PAGE</a> 
+                            </li>
+                            <li>
+                                <a href="folk.aspx" class="footanchor">FOLK HERE!</a> 
+                            </li>
+                            <li>
+                                <a href="../Gallery.html" class="footanchor" target="_blank">wakawaka</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
